@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #000;
+}
+
+h1{
+font-size: 4rem;
+font-family: poppins;
+color: white;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: url(bgimage.jpg);
+background-repeat: no-repeat;
+animation: bgAnimation 5s ease-in-out  infinite;
+}
+
+@keyframes bgAnimation{
+0%,100%{
+  background-position: 0% 0%;
+}50%{
+  background-position: 0% 100%;
+}
+
+}
