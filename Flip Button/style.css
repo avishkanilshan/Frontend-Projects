@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#fff;
+}
+span{
+  margin: 0 15px;
+  height: 55px;
+  width: 180px;
+  perspective: 1000px;
+  position: relative;
+  display: inline-flex;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  transform-style: preserve-3d;
+  font-family: poppins,sans-serif;
+}
+span a:before,
+span a:after{
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  content: "HOVER";
+  box-sizing: border-box;
+  justify-content: center;
+  border: 5px solid blue;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: blue;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: blue;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
