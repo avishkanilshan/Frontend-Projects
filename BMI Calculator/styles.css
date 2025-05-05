@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+body{
+  background: #0BA5FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  margin-bottom: 1.5 rem;
+}
+
+.input-group{
+  display: flex;
+  gap: 1rem;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: solid 1.5px #f2f2f2;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+.input-box label{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.input-box input{
+  border: none;
+  border-bottom: solid 2px black;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-bottom: 8px;
+  width: 5rem;
+}
+
+.result-box{
+  text-align: center;
+}
+
+.bmi-category{
+  font-weight: 600;
+}
+
+.bmi-range-group{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+  position: relative;
+}
+
+.bmi-range-group section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bmi-range-group section .bmi-line{
+  width: 100%;
+  height: 6px;
+}
+
+.underweight .bmi-line{
+  background:#0000ff;
+}
+
+.normal .bmi-line{
+  background:#008000;
+}
+
+.overweight .bmi-line{
+  background:#FFA500;
+}
+
+.obsedian .bmi-line{
+  background:#FF0000;
+}
+
+.bmi-range-group section .bmi-label{
+  font-weight: 500;
+}
+
+.bmi-indicator{
+  width: 3px;
+  height: 1.5rem;
+  background: black;
+  position: absolute;
+  top: -17%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  left: 0%;
+  transition: 300ms;
+}
+
+.button-group{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-group button{
+  width: 100%;
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms;
+  color: white;
+}
+
+.button-group button:active{
+  transform: scale(0.95);
+}
+
+.reset-button{
+  background: black;
+}
+
+.calculate-button{
+  background: #0BA5FF;
+  box-shadow: 0px 10px 16px rgba(0, 171, 255, 0.37);
+}

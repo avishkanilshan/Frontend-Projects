@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="container">
+    <!-- title BMI Calculator -->
+    <h1 class="title">BMI Calculator</h1>
+
+    <div class="input-group">
+
+      <!-- Input field weight -->
+     <div class="input-box">
+      <label for="weightInput"> Weight (kg)</label>
+      <input type="number" id="weightInput">
+     </div>
+
+      <!-- Input field height -->
+      <div class="input-box">
+        <label for="heightInput"> Height (cm)</label>
+        <input type="number" id="heightInput">
+       </div>
+
+    </div>
+
+    <!-- result -->
+    <div class="result-box">
+      <h1 id="resultBmiScore" class="bmi-score">0</h1>
+      <h3 id="resultBmiCategory" class="bmi-category">N/A</h3>
+    </div>
+
+    <!-- BMI Range -->
+     <div class="bmi-range-group">
+      <section class="underweight">
+        <div class="bmi-line"></div>
+        <h5 class="bmi-label">Underweight</h5>
+        <h4 class="bmi-number">&lt; 18.5</h4>
+      </section>
+      <section class="normal">
+        <div class="bmi-line"></div>
+        <h5 class="bmi-label">Normal</h5>
+        <h4 class="bmi-number">18.5-24.9</h4>
+      </section>
+      <section class="overweight">
+        <div class="bmi-line"></div>
+        <h5 class="bmi-label">Overweight</h5>
+        <h4 class="bmi-number">24.9-29.9</h4>
+      </section>
+      <section class="obsedian">
+        <div class="bmi-line"></div>
+        <h5 class="bmi-label">Obsedian</h5>
+        <h4 class="bmi-number"> 30 &gt; </h4>
+      </section>
+
+      <!-- BMI indicator -->
+       <div id="bmiIndicator" class="bmi-indicator"> </div>
+
+     </div>
+     <div class="button-group">
+
+      <button id="resetButton" class="reset-button">Reset</button>
+      <button id="calculateButton" class="calculate-button">Calculate</button>
+
+     </div>
+
+     
+  </main>
+</body>
+</html>
